@@ -103,11 +103,11 @@ module.exports = [
                 categorized[category].push(cmd);
             }
 
-            let text = `╭━━━❒ ${applyStyle("FLASH-MD System INFO", 10)} ❒━━━╮\n`;
+            let text = `╭━━━❒ ${applyStyle("MATRIX-XMD System INFO", 10)} ❒━━━╮\n`;
             text += `┃ 🧩 *Commands:* ${allCommands.length.toLocaleString()}\n`;
             text += `┃ 🪄 *Prefix:* ${prefix}\n`;
             text += `┃ ⏰ *Time:* ${time.format('HH:mm:ss')}\n`;
-            text += `┃ 🌍 *Timezone:* ${config.timezone || 'Africa/Lagos'}\n`;
+            text += `┃ 🌍 *Timezone:* ${config.timezone || 'Africa/Nairobi'}\n`;
             text += `┃ 📅 *Date:* ${time.format('DD/MM/YYYY')}\n`;
             text += `┃ 🔋 *Uptime:* ${uptime}\n`;
             text += `┃ 💻 *Platform:* ${platform}\n`;
@@ -138,8 +138,8 @@ module.exports = [
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363238139244263@newsletter',
-                        newsletterName: 'FLASH-MD',
+                        newsletterJid: '120363405078307965@newsletter',
+                        newsletterName: 'Zenor Tech',
                         serverMessageId: -1
                     }
                 }
@@ -157,7 +157,7 @@ module.exports = [
         category: 'General',
         execute: async (sock, msg, args, fromJid, allCommands) => {
             const prefix = Array.isArray(config.prefixes) && config.prefixes.length > 0 ? config.prefixes[0] : '.';
-            let text = `*🛠️ FLASH-MD-V2 USER GUIDE*\n\n`;
+            let text = `*🛠️ MATRIX-XMD USER GUIDE*\n\n`;
             text += `To use the bot:\n`;
             text += `• Start commands with the prefix *${prefix}*\n`;
             text += `• Use ${prefix}menu to view all available commands\n`;
@@ -189,8 +189,8 @@ module.exports = [
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363238139244263@newsletter',
-                        newsletterName: 'FLASH-MD',
+                        newsletterJid: '120363405078307965@newsletter',
+                        newsletterName: 'Zenor Tech',
                         serverMessageId: -1
                     }
                 }
